@@ -1,0 +1,39 @@
+code,key,desc
+ÿc0,white,SPRITE_COLOR_NORMAL / FONTCOLOR_WHITE
+ÿc1,red,SPRITE_COLOR_RED (pale red)
+ÿc2,green,SPRITE_COLOR_GREEN
+ÿc3,blue,SPRITE_COLOR_BLUE
+ÿc4,gold,SPRITE_COLOR_PANEL / FONTCOLOR_GOLD
+ÿc5,gray,SPRITE_COLOR_GREY
+ÿc6,black,SPRITE_COLOR_BLACK
+ÿc7,tan,SPRITE_COLOR_BNETGOLD
+ÿc8,orange,SPRITE_COLOR_ORANGE
+ÿc9,yellow,SPRITE_COLOR_YELLOW
+ÿcA,darkgreen1,TemperedColor by default $FontColorDarkGreen
+ÿcB,blue1,MagicColor by default $FontColorBlue
+ÿcC,green2,
+ÿcD,gold1,
+ÿcE,lightred,HealthPotionColor by default $FontColorWhite
+ÿcF,lightblue1,ManaPotionColor by default $FontColorWhite
+ÿcG,lightpink,RejuvPotionColor by default $FontColorWhite
+ÿcH,lightgold1,GoldColor by default $FontColorWhite
+ÿcI,gray2,EtherealColor by default $FontColor Grey
+ÿcJ,orange2,RuneColor by default $FontColorOrange
+ÿcK,gray1,SocketedColor by default $FontColorGrey
+ÿcL,orange3,EventItemsColor by default $FontColorOrange
+ÿcM,black1,light gold
+ÿcN,turquoise,light blue
+ÿcO,pink,
+ÿcP,lightblue2,pale violet
+ÿcQ,green1,light green
+ÿcR,yellow1,
+ÿcS,darkred,
+ÿcT,skyblue,
+ÿcU,red1,rich red
+ÿc;,purple,SPRITE_COLOR_PURPLE
+ÿc>,QuestColor by default $FontColorGoldYellow
+ÿc<,green3,SPRITE_COLOR_NEWCHAR
+ÿc=,white1,DefaultColor by default $FontColorWhite
+ÿc@,orange1,CraftedColor by default $FontColorOrange
+ÿc:,darkgreen2,SPRITE_COLOR_DARKGREEN
+ÿc?,RareColor by default $FontColorYellow

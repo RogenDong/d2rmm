@@ -1,0 +1,58 @@
+{
+  "name": "通用符文之语 Rune Words Unlocked",
+  "description": "Enables Rune Words to work on more items",
+  "author": "Shadedness",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/357",
+  "version": "1.4.2",
+  "config": [
+    {
+      "id": "enableLadder",
+      "type": "checkbox",
+      "name": "Enable ladder runewords",
+      "description": "离线模式启用领队符文。",
+      "defaultValue": true
+    },
+    {
+      "id": "weaponsUnlocked",
+      "type": "checkbox",
+      "name": "No weapon restrictions",
+      "description": "使武器的符文之语通用于所有武器分类。",
+      "defaultValue": true
+    },
+    {
+      "id": "shieldsUnlocked",
+      "type": "checkbox",
+      "name": "No shield restrictions",
+      "description": "使盾牌的符文之语通用于所有盾牌分类。",
+      "defaultValue": true
+    },
+    {
+      "id": "shieldsToArmor",
+      "type": "checkbox",
+      "name": "Shield runewords on armor",
+      "description": "使盾牌的符文之语可以用在甲胄上。如果开了 No shield restrictions，将包括圣骑士盾牌符文之语",
+      "defaultValue": true
+    },
+    {
+      "id": "armorToShields",
+      "type": "checkbox",
+      "name": "Armor runewords on shields",
+      "description": "使甲胄的符文之语可以用在盾牌上。",
+      "defaultValue": true
+    },
+    {
+      "id": "helmsToShields",
+      "type": "checkbox",
+      "name": "Helm runewords on shields",
+      "description": "使头盔的符文之语可以用在盾牌上。",
+      "defaultValue": true
+    },
+    {
+      "id": "armorUnlocked",
+      "type": "checkbox",
+      "name": "No armor restrictions",
+      "description": "使甲胄和头盔符文之语应用到所有防具。需要一个模组来给其他类型开孔。",
+      "defaultValue": true
+    }
+  ]
+}

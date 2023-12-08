@@ -1,0 +1,38 @@
+{
+  "name": "打孔 Socket Punching",
+  "description": "Allows socketing and unsocketing an item using jewels.",
+  "author": "olegbl",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/188",
+  "version": "1.1",
+  "config": [
+    {
+      "id": "socket",
+      "type": "checkbox",
+      "name": "Socketing Recipes",
+      "description": "打孔 = 无孔物品 + 1-6 颗珠宝",
+      "defaultValue": true
+    },
+    {
+      "id": "unsocket",
+      "type": "checkbox",
+      "name": "Socket Emptying Recipes",
+      "description": "去孔 = 物品 + 珠宝",
+      "defaultValue": true
+    },
+    {
+      "id": "item",
+      "type": "select",
+      "name": "Item to Use",
+      "description": "You can chose an item other than a jewel to use in the recipe instead.",
+      "defaultValue": "jew",
+      "options": [
+        { "value": "jew", "label": "珠宝" },
+        { "value": "rin", "label": "戒指" },
+        { "value": "amu", "label": "护符" },
+        { "value": "rvl", "label": "全效活力药" },
+        { "value": "tsc", "label": "回城卷轴" },
+        { "value": "isc", "label": "鉴定卷轴" }
+      ]
+    }
+  ]
+}

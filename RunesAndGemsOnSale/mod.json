@@ -1,0 +1,72 @@
+{
+  "name": "上架宝石符文 Runes and Gems on Sale",
+  "description": "Allow Akara, Drognan, Ormus, Lysander, Jamella and Mallah to sell Runes and Gems.",
+  "author": "griswd",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/372",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "low",
+      "type": "checkbox",
+      "name": "Sell low level Runes",
+      "description": "Allow Merchants to sell low level Runes.",
+      "defaultValue": true
+    },
+    {
+      "id": "mid",
+      "type": "checkbox",
+      "name": "Sell mid level Runes",
+      "description": "Allow Merchants to sell mid level Runes.",
+      "defaultValue": true
+    },
+    {
+      "id": "high",
+      "type": "checkbox",
+      "name": "Sell high level Runes",
+      "description": "Allow Merchants to sell high level Runes.",
+      "defaultValue": false
+    },
+    {
+      "id": "discount",
+      "type": "checkbox",
+      "name": "Cheaper Runes",
+      "description": "Allow discounts of 90% in Rune prices.",
+      "defaultValue": false
+    },
+    {
+      "id": "chipped",
+      "type": "checkbox",
+      "name": "Sell Chipped Gems",
+      "description": "Allow Merchants to sell Chipped Gems.",
+      "defaultValue": true
+    },
+    {
+      "id": "flawed",
+      "type": "checkbox",
+      "name": "Sell Flawed Gems",
+      "description": "Allow Merchants to sell Flawed Gems.",
+      "defaultValue": true
+    },
+    {
+      "id": "regular",
+      "type": "checkbox",
+      "name": "Sell Regular Gems",
+      "description": "Allow Merchants to sell Regular Gems.",
+      "defaultValue": true
+    },
+    {
+      "id": "flawless",
+      "type": "checkbox",
+      "name": "Sell Flawless Gems",
+      "description": "Allow Merchants to sell Flawless Gems.",
+      "defaultValue": false
+    },
+    {
+      "id": "perfect",
+      "type": "checkbox",
+      "name": "Sell Perfect Gems",
+      "description": "Allow Merchants to sell Perfect Gems.",
+      "defaultValue": false
+    }
+  ]
+}

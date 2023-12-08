@@ -1,0 +1,181 @@
+{
+  "name": "调整掉落 Reduce Item Clutter",
+  "description": "Replaces items with NoDrop",
+  "author": "Finkster",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/421",
+  "version": "1.2",
+  "config": [
+    {
+      "id": "strictness",
+      "name": "Strictness Level",
+      "description": "Refer to the README for detailed information",
+      "type": "select",
+      "defaultValue": "low",
+      "options": [
+          { "description": "", "label": "Off", "value": "off" },
+          { "description": "", "label": "Low", "value": "low" },
+          { "description": "", "label": "Medium", "value": "med" },
+          { "description": "", "label": "High", "value": "high" },
+          { "description": "", "label": "Ultra", "value": "ult" }
+      ]
+    },
+    {
+      "id": "gems",
+      "type": "section",
+      "name": "Gems",
+      "defaultExpanded": false
+    },
+    {
+      "id": "chip",
+      "type": "checkbox",
+      "name": "Remove Chipped Gems",
+      "description": "不掉落碎裂宝石",
+      "defaultValue": false
+    },
+    {
+      "id": "flaw",
+      "type": "checkbox",
+      "name": "Remove Flawed Gems",
+      "description": "不掉落瑕疵宝石",
+      "defaultValue": false
+    },
+    {
+      "id": "norm",
+      "type": "checkbox",
+      "name": "Remove Normal Gems",
+      "description": "不掉落普通宝石",
+      "defaultValue": false
+    },
+    {
+      "id": "flawless",
+      "type": "checkbox",
+      "name": "Remove Flawless Gems",
+      "description": "不掉落无瑕宝石",
+      "defaultValue": false
+    },
+    {
+      "id": "runes",
+      "type": "section",
+      "name": "Runes",
+      "defaultExpanded": false
+    },
+    {
+      "id": "elThul",
+      "type": "checkbox",
+      "name": "Remove Rune 1~10",
+      "description": "不掉落 El1 - Thul10",
+      "defaultValue": false
+    },
+    {
+      "id": "amnIo",
+      "type": "checkbox",
+      "name": "Remove Rune 11~16",
+      "description": "不掉落 Amn11 - Io16",
+      "defaultValue": false
+    },
+    {
+      "id": "lumKo",
+      "type": "checkbox",
+      "name": "Remove Rune 17~18",
+      "description": "不掉落 Lum17 - Ko18",
+      "defaultValue": false
+    },
+    {
+      "id": "misc",
+      "type": "section",
+      "name": "Misc",
+      "defaultExpanded": false
+    },
+    {
+      "id": "hp",
+      "type": "checkbox",
+      "name": "Remove Health Potions (normal monsters)",
+      "description": "Replace HP potions with NoDrop for normal monsters only",
+      "defaultValue": false
+    },
+    {
+      "id": "mp",
+      "type": "checkbox",
+      "name": "Remove Mana Potions (normal monsters)",
+      "description": "Replace MP potions with NoDrop for normal monsters only",
+      "defaultValue": false
+    },
+    {
+      "id": "rejuv",
+      "type": "checkbox",
+      "name": "Remove Rejuvination Potions (normal monsters)",
+      "description": "不掉落活力药（普通怪）",
+      "defaultValue": false
+    },
+    {
+      "id": "stam",
+      "type": "checkbox",
+      "name": "Remove Stamina Potions",
+      "description": "不掉落耐力药",
+      "defaultValue": false
+    },
+    {
+      "id": "ant",
+      "type": "checkbox",
+      "name": "Remove Antidote Potions",
+      "description": "不掉落解毒药",
+      "defaultValue": false
+    },
+    {
+      "id": "thaw",
+      "type": "checkbox",
+      "name": "Remove Thawing Potions",
+      "description": "不掉落解冻药",
+      "defaultValue": false
+    },
+    {
+      "id": "arrow",
+      "type": "checkbox",
+      "name": "Remove Arrows",
+      "description": "不掉落箭矢",
+      "defaultValue": false
+    },
+    {
+      "id": "bolt",
+      "type": "checkbox",
+      "name": "Remove Bolts",
+      "description": "不掉落弩矢",
+      "defaultValue": false
+    },
+    {
+      "id": "key",
+      "type": "checkbox",
+      "name": "Remove Keys",
+      "description": "不掉落钥匙",
+      "defaultValue": false
+    },
+    {
+      "id": "tp",
+      "type": "checkbox",
+      "name": "Remove Town Portal Scrolls",
+      "description": "不掉落回城卷轴",
+      "defaultValue": false
+    },
+    {
+      "id": "id",
+      "type": "checkbox",
+      "name": "Remove Identify Scrolls",
+      "description": "不掉落鉴定卷轴",
+      "defaultValue": false
+    },
+    {
+      "id": "oil",
+      "type": "checkbox",
+      "name": "Remove Oil Potions",
+      "description": "不掉落油瓶",
+      "defaultValue": false
+    },
+    {
+      "id": "gas",
+      "type": "checkbox",
+      "name": "Remove Gas Potions",
+      "description": "不掉落毒药",
+      "defaultValue": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "dong 配方",
+  "description": "",
+  "author": "dong",
+  "website": "",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "reSocketItem",
+      "type": "select",
+      "name": "改孔耗材",
+      "description": "",
+      "defaultValue": "jew",
+      "options": [
+        {
+          "value": "jew",
+          "label": "珠宝"
+        },
+        {
+          "value": "rin",
+          "label": "戒指"
+        },
+        {
+          "value": "amu",
+          "label": "护符"
+        },
+        {
+          "value": "tsc",
+          "label": "回城卷轴"
+        },
+        {
+          "value": "isc",
+          "label": "鉴定卷轴"
+        }
+      ]
+    }
+  ]
+}

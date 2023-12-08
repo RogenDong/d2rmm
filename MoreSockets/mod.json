@@ -1,0 +1,147 @@
+{
+  "name": "更多孔 More Sockets (extra sockets in all gear)",
+  "description": "More sockets enabled in all gear pieces, unleash your crafting potential ;)",
+  "author": "Shadedness",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/356",
+  "version": "1.0.1",
+  "config": [
+    {
+      "id": "gearRank",
+      "type": "select",
+      "name": "Gear level for increased number of sockets",
+      "description": "Set the gear level affected for increased number of sockets (up to 6): Normal, Exceptional (Nightmare/lvl 25+), or Elite (Hell/lvl 40+). The number of sockets is still limited to the number of inventory squares taken up by the item.",
+      "defaultValue": "normal",
+      "options": [
+        { "value": "normal", "label": "Normal & above" },
+        { "value": "exceptional", "label": "Exceptional & above" },
+        { "value": "elite", "label": "Elite only" }
+      ]
+    },
+    {
+      "id": "socketThrowing",
+      "type": "checkbox",
+      "name": "Enable Sockets on Throwing Weapons?",
+      "description": "Enable Throwing weapons to be socketed.",
+      "defaultValue": true
+    },
+    {
+      "id": "fourSocketHelms",
+      "type": "checkbox",
+      "name": "Increase Helms to 4 sockets?",
+      "description": "NOT recommended - Increasing helms to 4 sockets will make it harder to find helms suitable for helm runewords as they are typically 2 or 3 sockets only.",
+      "defaultValue": false
+    },
+    {
+      "id": "socketGloves",
+      "type": "checkbox",
+      "name": "Enable Sockets on Gloves?",
+      "description": "Enable Gloves to be socketed.",
+      "defaultValue": true
+    },
+    {
+      "id": "glovesBehavior",
+      "type": "select",
+      "name": "Glove sockets act like",
+      "description": "How should gems & runes treat glove sockets? This defines which effects from gems & runes are applied. RECOMMENDED: Weapon sockets since you're using hands & arms to attack, so it makes more sense.",
+      "defaultValue": "0",
+      "options": [
+        { "value": "0", "label": "Weapon sockets" },
+        { "value": "1", "label": "Armor or Helm sockets" },
+        { "value": "2", "label": "Shield sockets" }
+      ]
+    },
+    {
+      "id": "glovesSockets",
+      "type": "select",
+      "name": "How many sockets in Gloves?",
+      "description": "This defines how many sockets should be available in gloves. 'Gear level dependant' will allow 2 sockets for Normal gear, 3 sockets for Exceptional / Nightmare gear, and 4 sockets for Elite / Hell gear. RECOMMENDED: Gear Level Dependant for a bit more balance.",
+      "defaultValue": "4",
+      "options": [
+        { "value": "2", "label": "2" },
+        { "value": "4", "label": "4" },
+        { "value": "gearLevel", "label": "Gear Level Dependant" }
+      ]
+    },
+    {
+      "id": "socketBoots",
+      "type": "checkbox",
+      "name": "Enable Sockets on Boots?",
+      "description": "Enable Boots to be socketed.",
+      "defaultValue": true
+    },
+    {
+      "id": "bootsBehavior",
+      "type": "select",
+      "name": "Boot sockets act like",
+      "description": "How should gems & runes treat boot sockets? This defines which effects from gems & runes are applied. RECOMMENDED: Armor sockets since boots don't usually act as weapons or shields.",
+      "defaultValue": "1",
+      "options": [
+        { "value": "0", "label": "Weapon sockets" },
+        { "value": "1", "label": "Armor or Helm sockets" },
+        { "value": "2", "label": "Shield sockets" }
+      ]
+    },
+    {
+      "id": "bootsSockets",
+      "type": "select",
+      "name": "How many sockets in Boots?",
+      "description": "This defines how many sockets should be available in boots. 'Gear level dependant' will allow 2 sockets for Normal gear, 3 sockets for Exceptional / Nightmare gear, and 4 sockets for Elite / Hell gear. NOTE: Gear Level Dependant can have unexpected limitations for adding sockets to white items due to the way the game calculates item levels.",
+      "defaultValue": "4",
+      "options": [
+        { "value": "2", "label": "2" },
+        { "value": "4", "label": "4" },
+        { "value": "gearLevel", "label": "Gear Level Dependant" }
+      ]
+    },
+    {
+      "id": "socketBelts",
+      "type": "checkbox",
+      "name": "Enable Sockets on Belts?",
+      "description": "Enable Belts to be socketed.",
+      "defaultValue": true
+    },
+    {
+      "id": "beltsBehavior",
+      "type": "select",
+      "name": "Belt sockets act like",
+      "description": "How should gems & runes treat belt sockets? This defines which effects from gems & runes are applied. NOTE: Gear Level Dependant can have unexpected limitations for adding sockets to white items due to the way the game calculates item levels.",
+      "defaultValue": "1",
+      "options": [
+        { "value": "0", "label": "Weapon sockets" },
+        { "value": "1", "label": "Armor or Helm sockets" },
+        { "value": "2", "label": "Shield sockets" }
+      ]
+    },
+    {
+      "id": "beltsSockets",
+      "type": "select",
+      "name": "How many sockets in Belts?",
+      "description": "This defines how many sockets should be available in belts. 'Gear level dependant' will allow 1 sockets for Normal gear, 2 sockets for Exceptional / Nightmare gear and above. NOTE: Gear Level Dependant can have unexpected limitations for adding sockets to white items due to the way the game calculates item levels.",
+      "defaultValue": "2",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" },
+        { "value": "gearLevel", "label": "Gear Level Dependant" }
+      ]
+    },
+    {
+      "id": "socketJewelry",
+      "type": "checkbox",
+      "name": "Enable Sockets on Jewelry?",
+      "description": "Enable Ring and Amulets to be socketed.",
+      "defaultValue": true
+    },
+    {
+      "id": "jewelryBehavior",
+      "type": "select",
+      "name": "Jewelry sockets act like",
+      "description": "How should gems & runes treat ring and amulet sockets? This defines which effects from gems & runes are applied. RECOMMENDED: Shields to bring some variety, and jewelry is often encompassing resistance bonuses like shields do.",
+      "defaultValue": "2",
+      "options": [
+        { "value": "0", "label": "Weapon sockets" },
+        { "value": "1", "label": "Armor or Helm sockets" },
+        { "value": "2", "label": "Shield sockets" }
+      ]
+    }
+  ]
+}

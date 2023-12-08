@@ -1,0 +1,6 @@
+# d2rmm config data
+config.json
+# hd asset
+*.sprite
+
+colors.txt

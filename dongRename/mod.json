@@ -1,0 +1,16 @@
+{
+  "name": "dong 重命名",
+  "description": "",
+  "author": "dong",
+  "website": "",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "favAff",
+      "type": "text",
+      "name": "特别注意的词缀",
+      "description": "在游戏中红标这里输入的词缀。填正则表达式",
+      "defaultValue": ""
+    }
+  ]
+}
