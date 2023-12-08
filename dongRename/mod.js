@@ -101,13 +101,12 @@ function rename_affixe() {
     else if (fav_aff != null && fav_aff.test(nam.id)) {
       nam.zhTW = `ÿc1${nam.zhCN}ÿcB`;
     }
-    else if (nam.Key === 'gld') {
+    // 金币缩写为 G
+    else if (nam.id == 2215) {
       nam.zhTW = 'G';
     }
-    else if (nam.Key === 'Skull') {
-      nam.zhTW = nam.zhCN;
-    }
-    else if ((/^gs[bgrw]$/g).test(nam.Key)) {
+    // 骷髅,宝石词缀修改
+    else if (nam.id == 2287 || (/^gs[bgrw]$/g).test(nam.Key)) {
       nam.zhTW = `ÿc1${nam.zhCN}ÿc0`;
     }
     else {
@@ -130,7 +129,7 @@ function rename_item() {
     else if (nam.id == 2202) {
       nam.zhTW = '鉴定';
     }
-    // charms
+    // 咒符
     else if (nam.id >= 20435 && nam.id <= 20437) {
       nam.zhTW = `ÿc;${SIZE[nam.id - 20435]}符ÿc3`;
     }
@@ -138,55 +137,56 @@ function rename_item() {
     else if (nam.id >= 2266 && nam.id <= 2275) {
       nam.zhTW = nam.Key;
     }
-    // Rejuvenation Potion
+    // 活力药水
     else if (nam.id >= 2209 && nam.id <= 2210) {
       nam.zhTW = '活力' + (nam.id - 2208);
     }
-    // skulls
+    // 骷髅石
     else if (nam.id >= 2277 && nam.id <= 2281) {
-      nam.zhTW = nam.zhCN.substring(0, nam.zhCN.length - 2);
+      nam.zhTW = nam.zhCN.substring(0, 2) + '骨';
     }
-    // diamond
+    // 钻石
     else if (nam.id >= 2261 && nam.id <= 2265) {
-      nam.zhTW = nam.zhCN.substring(0, nam.zhCN.length - 2) + '白';
+      nam.zhTW = nam.zhCN.substring(0, 2) + '白';
     }
-    // gems
+    // 彩色宝石
     else if (nam.id >= 2236 && nam.id <= 2260) {
-      nam.zhTW = nam.zhCN.substring(0, nam.zhCN.length - 2);
+      const mm = nam.zhCN;
+      nam.zhTW = mm.substring(0, 2) + mm[3];
     }
-    // key of Terror/Hate/Destruction
+    // 恐惧Terror 憎恨Hate 毁灭Destruction
     else if (nam.id >= 11146 && nam.id <= 11148) {
       let n = 1;
       if (nam.id == 11148) n = 5;
       else if (nam.id > 11146) n += 1;
-      nam.zhTW = nam.zhCN + "_A" + n;
+      nam.zhTW = nam.zhCN + "A" + n;
     }
     else if (nam.id >= 11164 && nam.id <= 11167) {
       if (nam.id == 11164)
-        nam.zhTW = nam.zhCN + "_A1A2";
+        nam.zhTW = nam.zhCN + "A1A2";
       else {
         let n = 5 - (11167 - nam.id);
-        nam.zhTW = nam.zhCN + "_A" + n;
+        nam.zhTW = nam.zhCN + "A" + n;
       }
     }
-    // hide
-    // else if (nam.id >= 2182 && nam.id <= 2187) {
-    //   nam.zhTW = '';
-    // }
+    // 装备品质 + 轻重
     else if (W_TYPE.normcode.length > 0 || A_TYPE.normcode.length > 0) {
       function get_type_sfx(name) {
+        // 武器
         for (const t in W_TYPE) {
           if (W_TYPE[t].includes(name.Key)) {
-            return "_" + DICT[t];
+            return ' ' + DICT[t];
           }
         }
         let sfx = null;
+        // 防具轻重
         for (const s in A_SPEED) {
           if (A_SPEED[s].includes(name.Key)) {
-            sfx = "_" + DICT[s];
+            sfx = ' ' + DICT[s];
             break;
           }
         }
+        // 防具品质
         if (sfx == null) return sfx;
         for (const t in A_TYPE) {
           if (A_TYPE[t].includes(name.Key)) {
@@ -198,22 +198,34 @@ function rename_item() {
       if (sfx != null) {
         nam.zhTW = nam.zhCN + sfx;
       }
-    } else {
+    }
+    else {
       nam.zhTW = nam.zhCN;
     }
   }
   D2RMM.writeJson(path_items, ls_item);
 }
 
-/** 突出显示 TODO 测试 */
+/** 突出显示 */
 function recolor_ui() {
   const path_str_ui = 'local\\lng\\strings\\ui.json';
   const ls_sui = D2RMM.readJson(path_str_ui);
   for (const ui of ls_sui) {
-    // 后置高品质词缀
-    if (ui.id == 1711) {
+    // 后置品质词缀
+    if (ui.id == 1711 || ui.id == 1712) {
       ui.zhTW = "%1%0";
-      break;// TODO
+    }
+    // MagicFormat
+    else if (ui.id == 1714) {
+      ui.zhTW = '%0 %2 %1';
+    }
+    // ItemNameMagicFormatSuffixOnly
+    else if (ui.id == 26776) {
+      ui.zhTW = 's%1 %0';
+    }
+    // ItemNameMagicFormatPrefixOnly
+    else if (ui.id == 26775) {
+      ui.zhTW = 'p%0 %1';
     }
   }
   D2RMM.writeJson(path_str_ui, ls_sui);
