@@ -110,7 +110,7 @@ function rename_affixe() {
       nam.zhTW = 'G';
     }
     // 骷髅,宝石词缀修改
-    else if (nam.id == 2287 || (/^gs[bgrw]$/g).test(nam.Key)) {
+    else if ((/^gs[bgrw]$/g).test(nam.Key)) {
       nam.zhTW = `ÿc1${nam.zhCN}ÿc0`;
     }
     else {
