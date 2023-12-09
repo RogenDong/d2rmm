@@ -145,7 +145,7 @@ function get_type_sfx(name) {
   if (tmp != null) {
     for (const t in A_TYPE) {
       if (A_TYPE[t].includes(name.Key)) {
-        return DICT[t] + sfx;
+        return DICT[t] + tmp + sfx;
       }
     }
   }
