@@ -4,19 +4,7 @@ const runes = D2RMM.readJson(path_runes_json);
 runes.push({
   id: 27369,
   Key: "Runeword180",
-  enUS: "TPSh",
-  zhTW: "TP盾",
-  deDE: "TPSh",
-  esES: "TPSh",
-  frFR: "TPSh",
-  itIT: "TPSh",
-  koKR: "TPSh",
-  plPL: "TPSh",
-  esMX: "TPSh",
-  jaJP: "TPSh",
-  ptBR: "TPSh",
-  ruRU: "TPSh",
-  zhCN: "TP盾"
+  zhTW: "TP盾"
 });
 D2RMM.writeJson(path_runes_json, runes);
 
@@ -38,12 +26,9 @@ tsv_runes.rows.push({
   T1Param1: 'Teleport',
   T1Min1: 1,
   T1Max1: 1,
-  T1Code2: 'res-cold',
-  T1Min2: 30,
-  T1Max2: 30,
-  T1Code3: 'res-all',
-  T1Min3: 13,
-  T1Max3: 13,
+  T1Code2: 'res-all',
+  T1Min2: 13,
+  T1Max2: 13,
   '*eol': 0,
 });
 D2RMM.writeTsv(path_runes_tsv, tsv_runes);
