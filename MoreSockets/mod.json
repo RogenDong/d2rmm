@@ -8,139 +8,139 @@
     {
       "id": "gearRank",
       "type": "select",
-      "name": "Gear level for increased number of sockets",
-      "description": "Set the gear level affected for increased number of sockets (up to 6): Normal, Exceptional (Nightmare/lvl 25+), or Elite (Hell/lvl 40+). The number of sockets is still limited to the number of inventory squares taken up by the item.",
+      "name": "增加孔数的挡位",
+      "description": "设置收孔数影响的装备等级（6个以内）: 普通，卓越（噩梦lvl 25+），精英（地狱/lvl 40+） 孔数仍限制在占用空间内。",
       "defaultValue": "normal",
       "options": [
-        { "value": "normal", "label": "Normal & above" },
-        { "value": "exceptional", "label": "Exceptional & above" },
-        { "value": "elite", "label": "Elite only" }
+        { "value": "normal", "label": "普通及以上" },
+        { "value": "exceptional", "label": "卓越及以上" },
+        { "value": "elite", "label": "精英" }
       ]
     },
     {
       "id": "socketThrowing",
       "type": "checkbox",
-      "name": "Enable Sockets on Throwing Weapons?",
-      "description": "Enable Throwing weapons to be socketed.",
+      "name": "是否开启投掷武器的空位？",
+      "description": "",
       "defaultValue": true
     },
     {
       "id": "fourSocketHelms",
       "type": "checkbox",
-      "name": "Increase Helms to 4 sockets?",
-      "description": "NOT recommended - Increasing helms to 4 sockets will make it harder to find helms suitable for helm runewords as they are typically 2 or 3 sockets only.",
+      "name": "是否提升头盔（helms）孔数上限到4",
+      "description": "【不建议】头盔符文之语通常只占 2~3 孔。",
       "defaultValue": false
     },
     {
       "id": "socketGloves",
       "type": "checkbox",
-      "name": "Enable Sockets on Gloves?",
-      "description": "Enable Gloves to be socketed.",
+      "name": "是否启用手套（Gloves）孔位",
+      "description": "",
       "defaultValue": true
     },
     {
       "id": "glovesBehavior",
       "type": "select",
-      "name": "Glove sockets act like",
-      "description": "How should gems & runes treat glove sockets? This defines which effects from gems & runes are applied. RECOMMENDED: Weapon sockets since you're using hands & arms to attack, so it makes more sense.",
+      "name": "手套孔位归为...",
+      "description": "定义宝石和符文在手套上的效果",
       "defaultValue": "0",
       "options": [
-        { "value": "0", "label": "Weapon sockets" },
-        { "value": "1", "label": "Armor or Helm sockets" },
-        { "value": "2", "label": "Shield sockets" }
+        { "value": "0", "label": "武器" },
+        { "value": "1", "label": "甲胄或头盔" },
+        { "value": "2", "label": "盾" }
       ]
     },
     {
       "id": "glovesSockets",
       "type": "select",
-      "name": "How many sockets in Gloves?",
-      "description": "This defines how many sockets should be available in gloves. 'Gear level dependant' will allow 2 sockets for Normal gear, 3 sockets for Exceptional / Nightmare gear, and 4 sockets for Elite / Hell gear. RECOMMENDED: Gear Level Dependant for a bit more balance.",
+      "name": "手套的孔数?",
+      "description": "选择手套孔数。挡位变化：普通2孔；卓越/噩梦3孔；精英/地狱4孔",
       "defaultValue": "4",
       "options": [
         { "value": "2", "label": "2" },
         { "value": "4", "label": "4" },
-        { "value": "gearLevel", "label": "Gear Level Dependant" }
+        { "value": "gearLevel", "label": "随挡位变化" }
       ]
     },
     {
       "id": "socketBoots",
       "type": "checkbox",
-      "name": "Enable Sockets on Boots?",
-      "description": "Enable Boots to be socketed.",
+      "name": "是否启用鞋的孔位",
+      "description": "",
       "defaultValue": true
     },
     {
       "id": "bootsBehavior",
       "type": "select",
-      "name": "Boot sockets act like",
-      "description": "How should gems & runes treat boot sockets? This defines which effects from gems & runes are applied. RECOMMENDED: Armor sockets since boots don't usually act as weapons or shields.",
+      "name": "鞋的孔位类似...",
+      "description": "定义宝石和符文在手套上的效果",
       "defaultValue": "1",
       "options": [
-        { "value": "0", "label": "Weapon sockets" },
-        { "value": "1", "label": "Armor or Helm sockets" },
-        { "value": "2", "label": "Shield sockets" }
+        { "value": "0", "label": "武器" },
+        { "value": "1", "label": "甲胄或头盔" },
+        { "value": "2", "label": "盾" }
       ]
     },
     {
       "id": "bootsSockets",
       "type": "select",
-      "name": "How many sockets in Boots?",
-      "description": "This defines how many sockets should be available in boots. 'Gear level dependant' will allow 2 sockets for Normal gear, 3 sockets for Exceptional / Nightmare gear, and 4 sockets for Elite / Hell gear. NOTE: Gear Level Dependant can have unexpected limitations for adding sockets to white items due to the way the game calculates item levels.",
+      "name": "鞋的孔数？",
+      "description": "挡位变化：普通2孔；卓越/噩梦3孔；精英/地狱4孔",
       "defaultValue": "4",
       "options": [
         { "value": "2", "label": "2" },
         { "value": "4", "label": "4" },
-        { "value": "gearLevel", "label": "Gear Level Dependant" }
+        { "value": "gearLevel", "label": "随挡位变化" }
       ]
     },
     {
       "id": "socketBelts",
       "type": "checkbox",
-      "name": "Enable Sockets on Belts?",
-      "description": "Enable Belts to be socketed.",
+      "name": "是否启用腰带孔位",
+      "description": "",
       "defaultValue": true
     },
     {
       "id": "beltsBehavior",
       "type": "select",
-      "name": "Belt sockets act like",
-      "description": "How should gems & runes treat belt sockets? This defines which effects from gems & runes are applied. NOTE: Gear Level Dependant can have unexpected limitations for adding sockets to white items due to the way the game calculates item levels.",
+      "name": "腰带的孔位类似...",
+      "description": "",
       "defaultValue": "1",
       "options": [
-        { "value": "0", "label": "Weapon sockets" },
-        { "value": "1", "label": "Armor or Helm sockets" },
-        { "value": "2", "label": "Shield sockets" }
+        { "value": "0", "label": "武器" },
+        { "value": "1", "label": "甲胄或头盔" },
+        { "value": "2", "label": "盾" }
       ]
     },
     {
       "id": "beltsSockets",
       "type": "select",
-      "name": "How many sockets in Belts?",
-      "description": "This defines how many sockets should be available in belts. 'Gear level dependant' will allow 1 sockets for Normal gear, 2 sockets for Exceptional / Nightmare gear and above. NOTE: Gear Level Dependant can have unexpected limitations for adding sockets to white items due to the way the game calculates item levels.",
+      "name": "腰带的孔数？",
+      "description": "挡位变化：普通1孔；卓越/噩梦以上2孔",
       "defaultValue": "2",
       "options": [
         { "value": "1", "label": "1" },
         { "value": "2", "label": "2" },
-        { "value": "gearLevel", "label": "Gear Level Dependant" }
+        { "value": "gearLevel", "label": "随挡位变化" }
       ]
     },
     {
       "id": "socketJewelry",
       "type": "checkbox",
-      "name": "Enable Sockets on Jewelry?",
-      "description": "Enable Ring and Amulets to be socketed.",
+      "name": "是否启用饰品（指环、项链）孔位",
+      "description": "",
       "defaultValue": true
     },
     {
       "id": "jewelryBehavior",
       "type": "select",
-      "name": "Jewelry sockets act like",
-      "description": "How should gems & runes treat ring and amulet sockets? This defines which effects from gems & runes are applied. RECOMMENDED: Shields to bring some variety, and jewelry is often encompassing resistance bonuses like shields do.",
+      "name": "饰品孔位类似...",
+      "description": "",
       "defaultValue": "2",
       "options": [
-        { "value": "0", "label": "Weapon sockets" },
-        { "value": "1", "label": "Armor or Helm sockets" },
-        { "value": "2", "label": "Shield sockets" }
+        { "value": "0", "label": "武器" },
+        { "value": "1", "label": "甲胄或头盔" },
+        { "value": "2", "label": "盾" }
       ]
     }
   ]
