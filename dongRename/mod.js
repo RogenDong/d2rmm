@@ -23,6 +23,8 @@ const W_TYPE = {
   /** 精华 */
   ultracode: '',
 };
+/** 物等表 */
+const LVL = {};
 
 const DICT = {
   0: '轻',
@@ -37,6 +39,7 @@ const DICT = {
 function map_armor() {
   const ls_armor = D2RMM.readTsv('global\\excel\\armor.txt');
   for (const a of ls_armor.rows) {
+    LVL[a.code] = a.level;
     let pass = true;
     for (const col in A_TYPE) {
       if (a.code === a[col]) {
@@ -58,6 +61,7 @@ function map_armor() {
 function map_weapon() {
   const ls_weap = D2RMM.readTsv('global\\excel\\weapons.txt');
   for (const w of ls_weap.rows) {
+    LVL[w.code] = w.level;
     for (const col in W_TYPE) {
       if (w.code === w[col]) {
         W_TYPE[col] += w.code + ' ';
@@ -117,6 +121,37 @@ function rename_affixe() {
   D2RMM.writeJson(path_affixe, ls_affixe);
 }
 
+// 获取品质、轻重
+function get_type_sfx(name) {
+  let sfx = LVL[name.Key];
+  if (sfx == null) {
+    sfx = '';
+  }
+  // 武器
+  for (const t in W_TYPE) {
+    if (W_TYPE[t].includes(name.Key)) {
+      return DICT[t] + sfx;
+    }
+  }
+  let tmp = null;
+  // 防具轻重
+  for (const s in A_SPEED) {
+    if (A_SPEED[s].includes(name.Key)) {
+      tmp = DICT[s];
+      break;
+    }
+  }
+  // 防具品质
+  if (tmp != null) {
+    for (const t in A_TYPE) {
+      if (A_TYPE[t].includes(name.Key)) {
+        return DICT[t] + sfx;
+      }
+    }
+  }
+  return sfx;
+}
+
 /** 重命名物品 */
 function rename_item() {
   const SIZE = '小中大';
@@ -169,38 +204,15 @@ function rename_item() {
         nam.zhTW = nam.zhCN + "A" + n;
       }
     }
-    // 装备品质 + 轻重
-    else if (W_TYPE.normcode.length > 0 || A_TYPE.normcode.length > 0) {
-      function get_type_sfx(name) {
-        // 武器
-        for (const t in W_TYPE) {
-          if (W_TYPE[t].includes(name.Key)) {
-            return ' ' + DICT[t];
-          }
-        }
-        let sfx = null;
-        // 防具轻重
-        for (const s in A_SPEED) {
-          if (A_SPEED[s].includes(name.Key)) {
-            sfx = ' ' + DICT[s];
-            break;
-          }
-        }
-        // 防具品质
-        if (sfx == null) return sfx;
-        for (const t in A_TYPE) {
-          if (A_TYPE[t].includes(name.Key)) {
-            return sfx + DICT[t];
-          }
-        }
-      } // fn get_type_sfx
-      const sfx = get_type_sfx(nam);
-      if (sfx != null) {
-        nam.zhTW = nam.zhCN + sfx;
-      }
-    }
     else {
       nam.zhTW = nam.zhCN;
+    }
+    // 装备品质 + 轻重
+    if (W_TYPE.normcode.length > 0 || A_TYPE.normcode.length > 0) {
+      const sfx = get_type_sfx(nam);
+      if (sfx != null) {
+        nam.zhTW = `${nam.zhTW} ${sfx}`;
+      }
     }
   }
   D2RMM.writeJson(path_items, ls_item);
@@ -213,7 +225,7 @@ function recolor_ui() {
   for (const ui of ls_sui) {
     // 后置品质词缀
     if (ui.id == 1711 || ui.id == 1712) {
-      ui.zhTW = "%1%0";
+      ui.zhTW = "%1 %0";
     }
     // MagicFormat
     else if (ui.id == 1714) {
