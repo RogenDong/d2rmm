@@ -187,7 +187,11 @@ function rename_item() {
     // 彩色宝石
     else if (nam.id >= 2236 && nam.id <= 2260) {
       const mm = nam.zhCN;
-      nam.zhTW = mm.substring(0, 2) + mm[3];
+      if (mm.length > 3) {
+        nam.zhTW = mm.substring(0, 2) + mm[3];
+      } else {
+        nam.zhTW = mm;
+      }
     }
     // 恐惧Terror 憎恨Hate 毁灭Destruction
     else if (nam.id >= 11146 && nam.id <= 11148) {
