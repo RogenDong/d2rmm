@@ -159,10 +159,10 @@ function rename_item() {
   const ls_item = D2RMM.readJson(path_items);
   for (const nam of ls_item) {
     if (nam.id == 2200) {
-      nam.zhTW = '回城';
+      nam.zhTW = 'TP';
     }
     else if (nam.id == 2202) {
-      nam.zhTW = '鉴定';
+      nam.zhTW = 'ID';
     }
     // 咒符
     else if (nam.id >= 20435 && nam.id <= 20437) {
@@ -196,14 +196,17 @@ function rename_item() {
     // 恐惧Terror 憎恨Hate 毁灭Destruction
     else if (nam.id >= 11146 && nam.id <= 11148) {
       let n = 1;
-      if (nam.id == 11148) n = 5;
-      else if (nam.id > 11146) n += 1;
+      if (nam.id == 11148) {
+        n = 5;
+      } else if (nam.id > 11146) {
+        n += 1;
+      }
       nam.zhTW = nam.zhCN + "A" + n;
     }
     else if (nam.id >= 11164 && nam.id <= 11167) {
-      if (nam.id == 11164)
+      if (nam.id == 11164) {
         nam.zhTW = nam.zhCN + "A1A2";
-      else {
+      } else {
         let n = 5 - (11167 - nam.id);
         nam.zhTW = nam.zhCN + "A" + n;
       }
