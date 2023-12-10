@@ -1,0 +1,119 @@
+{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/particles/objects/braziers/tiki_torch_1/vfx_tikitorch1_opened.particles"
+            }
+        ],
+        "models": [
+            {
+                "path": "data/hd/env/model/global/prop/objects/braziers/torch_jungle01.model"
+            }
+        ],
+        "skeletons": [],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/objects/braziers/jungle_torch_2/texture/jungle_torch_2_ALB.texture"
+            },
+            {
+                "path": "data/hd/objects/braziers/jungle_torch_2/texture/jungle_torch_2_NRM.texture"
+            },
+            {
+                "path": "data/hd/objects/braziers/jungle_torch_2/texture/jungle_torch_2_ORM.texture"
+            },
+            {
+                "path": "data/hd/vfx/textures/gradient/T_FX_AlphaRemapLinear.texture"
+            }
+        ],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "Prefab",
+    "name": "pf_lit_torch01",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "torch_jungle01_01",
+            "id": 3931296403,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "torch_jungle01_01_components_TransformDefinitionComponent",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "component_model_torso",
+                    "filename": "data/hd/objects/braziers/tomb_wall_torch_left/model/torso.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "ModelPlatformTierComponent",
+                    "name": "torch_jungle01_ModelPlatformTier",
+                    "visibilityTier": 0,
+                    "shadowTier": -1
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "FX_torch_flame01_01",
+            "id": 508364619,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "FX_torch_flame01_01_components_TransformDefinitionComponent",
+                    "position": {
+                        "x": 0.8,
+                        "y": 10.4,
+                        "z": -1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "FX_torch_flame01_VfxDefinition",
+                    "filename": "data/hd/vfx/particles/objects/braziers/tomb_wall_torch_left/vfx_tombwalltorchleft_neutral.particles",
+                    "hardKillOnDestroy": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,2963 @@
+{
+    "dependencies": {
+        "particles": [],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_ALB.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_NRM.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_ORM.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_ALB.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_NRM.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_ORM.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_ALB.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_NRM.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_ORM.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_ALB.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_NRM.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_ORM.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_ALB.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_NRM.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_ORM.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_ALB.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_NRM.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_ORM.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/default_NOISE.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/noise/act2/act2_palace_dirt01_NOISE.texture"
+            },
+            {
+                "path": "data/hd/env/texture/terrain/noise/act2/act2_palace_tile01_NOISE.texture"
+            }
+        ],
+        "physics": [],
+        "json": [
+            {
+                "path": "data/hd/env/tilemasks/tile_masks.json"
+            },
+            {
+                "path": "data/hd/env/vis/ui_frontend_special.json"
+            },
+            {
+                "path": "data/hd/env/vis/ui_frontend_special.json"
+            },
+            {
+                "path": "data/hd/env/vis/ui_frontend_special.json"
+            },
+            {
+                "path": "data/hd/env/vis/ui_frontend_special.json"
+            },
+            {
+                "path": "data/hd/env/vis/ui_frontend_special.json"
+            },
+            {
+                "path": "data/hd/env/vis/ui_frontend_special.json"
+            }
+        ],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": [
+            {
+                "path": "data/hd/env/ibl/act3_IW_over29_CUBEMAP.ibls"
+            }
+        ]
+    },
+    "type": "Biome",
+    "name": "act2_frontend",
+    "visualDataFilenames": [
+        {
+            "type": "BiomeVisualDataFile",
+            "name": "BiomeVisualDataFile1",
+            "visualDataFilename": "data/hd/env/vis/ui_frontend_special.json"
+        },
+        {
+            "type": "BiomeVisualDataFile",
+            "name": "BiomeVisualDataFile2",
+            "visualDataFilename": "data/hd/env/vis/ui_frontend_special.json"
+        },
+        {
+            "type": "BiomeVisualDataFile",
+            "name": "BiomeVisualDataFile3",
+            "visualDataFilename": "data/hd/env/vis/ui_frontend_special.json"
+        },
+        {
+            "type": "BiomeVisualDataFile",
+            "name": "BiomeVisualDataFile4",
+            "visualDataFilename": "data/hd/env/vis/ui_frontend_special.json"
+        },
+        {
+            "type": "BiomeVisualDataFile",
+            "name": "BiomeVisualDataFile5",
+            "visualDataFilename": "data/hd/env/vis/ui_frontend_special.json"
+        },
+        {
+            "type": "BiomeVisualDataFile",
+            "name": "BiomeVisualDataFile6",
+            "visualDataFilename": "data/hd/env/vis/ui_frontend_special.json"
+        }
+    ],
+    "iblSettings": {
+        "type": "ImageBasedLightingSettings",
+        "name": "ibl_settings",
+        "cubemapFilename": "data/hd/env/ibl/act3_IW_over29_CUBEMAP.ibls"
+    },
+    "tileMaskFilename": "data/hd/env/tilemasks/tile_masks.json",
+    "terrainDataUltra": {
+        "type": "TerrainData",
+        "name": "act2_frontend_terrainDataUltra",
+        "terrainLayers": [
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainLayers_0",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.111,
+                "NoiseScale": 0.01,
+                "NoiseTilingOffset": -0.837,
+                "HeightBias": 0.0,
+                "ParallaxScale": 0.0,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainLayers_1",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/noise/act2/act2_palace_tile01_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.2,
+                "NoiseScale": 0.25,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": -1.0,
+                "ParallaxScale": 0.403,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainLayers_2",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.06,
+                "NoiseScale": 0.2,
+                "NoiseTilingOffset": -0.337,
+                "HeightBias": 0.0,
+                "ParallaxScale": 0.0,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "dust01",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/noise/act2/act2_palace_dirt01_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.2,
+                "NoiseScale": 0.487,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": 0.0,
+                "ParallaxScale": 0.2,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "NONE01",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.038,
+                "NoiseScale": 0.482,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": -1.0,
+                "ParallaxScale": 1.161,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "NONE02",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.2,
+                "NoiseScale": 0.2,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": -1.0,
+                "ParallaxScale": 1.0,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            }
+        ],
+        "terrainModelBlendSettings": {
+            "type": "TerrainModelBlendSettingsDesc",
+            "name": "act2_frontend_terrainModelBlendSettings",
+            "low": {
+                "type": "TerrainModelBlendSettingsPresetDesc",
+                "name": "act2_frontend_terrainModelBlendSettings_low",
+                "heightRange": {
+                    "x": 0.0,
+                    "y": 0.5
+                },
+                "noiseFrequency": 0.5,
+                "noiseScale": 0.2
+            },
+            "medium": {
+                "type": "TerrainModelBlendSettingsPresetDesc",
+                "name": "act2_frontend_terrainModelBlendSettings_medium",
+                "heightRange": {
+                    "x": 0.0,
+                    "y": 0.5
+                },
+                "noiseFrequency": 0.5,
+                "noiseScale": 0.2
+            },
+            "high": {
+                "type": "TerrainModelBlendSettingsPresetDesc",
+                "name": "act2_frontend_terrainModelBlendSettings_high",
+                "heightRange": {
+                    "x": 0.0,
+                    "y": 0.5
+                },
+                "noiseFrequency": 0.5,
+                "noiseScale": 0.2
+            }
+        },
+        "pathSmoothingWeight": 0.0,
+        "pathEdgeThresholdMin": 1.0,
+        "pathEdgeThresholdMax": 1.0,
+        "pathEdgeIndex": 0
+    },
+    "terrainDataHigh": {
+        "type": "TerrainData",
+        "name": "act2_frontend_terrainDataUltra001",
+        "terrainLayers": [
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra001_terrainLayers_0",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.111,
+                "NoiseScale": 0.01,
+                "NoiseTilingOffset": -0.837,
+                "HeightBias": 0.0,
+                "ParallaxScale": 0.0,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra001_terrainLayers_1",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/noise/act2/act2_palace_tile01_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.2,
+                "NoiseScale": 0.25,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": -1.0,
+                "ParallaxScale": 0.403,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra001_terrainLayers_2",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.06,
+                "NoiseScale": 0.2,
+                "NoiseTilingOffset": -0.337,
+                "HeightBias": 0.0,
+                "ParallaxScale": 0.0,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra001_terrainLayers_3",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/noise/act2/act2_palace_dirt01_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.2,
+                "NoiseScale": 0.487,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": 0.0,
+                "ParallaxScale": 0.2,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra001_terrainLayers_4",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.038,
+                "NoiseScale": 0.482,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": -1.0,
+                "ParallaxScale": 1.161,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra001_terrainLayers_5",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.2,
+                "NoiseScale": 0.2,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": -1.0,
+                "ParallaxScale": 1.0,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            }
+        ],
+        "terrainModelBlendSettings": {
+            "type": "TerrainModelBlendSettingsDesc",
+            "name": "act2_frontend_terrainDataUltra001_terrainModelBlendSettings",
+            "low": {
+                "type": "TerrainModelBlendSettingsPresetDesc",
+                "name": "act2_frontend_terrainDataUltra001_terrainModelBlendSettings_low",
+                "heightRange": {
+                    "x": 0.0,
+                    "y": 0.5
+                },
+                "noiseFrequency": 0.5,
+                "noiseScale": 0.2
+            },
+            "medium": {
+                "type": "TerrainModelBlendSettingsPresetDesc",
+                "name": "act2_frontend_terrainDataUltra001_terrainModelBlendSettings_medium",
+                "heightRange": {
+                    "x": 0.0,
+                    "y": 0.5
+                },
+                "noiseFrequency": 0.5,
+                "noiseScale": 0.2
+            },
+            "high": {
+                "type": "TerrainModelBlendSettingsPresetDesc",
+                "name": "act2_frontend_terrainDataUltra001_terrainModelBlendSettings_high",
+                "heightRange": {
+                    "x": 0.0,
+                    "y": 0.5
+                },
+                "noiseFrequency": 0.5,
+                "noiseScale": 0.2
+            }
+        },
+        "pathSmoothingWeight": 0.0,
+        "pathEdgeThresholdMin": 1.0,
+        "pathEdgeThresholdMax": 1.0,
+        "pathEdgeIndex": 0
+    },
+    "terrainDataMed": {
+        "type": "TerrainData",
+        "name": "act2_frontend_terrainDataUltra002",
+        "terrainLayers": [
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra002_terrainLayers_0",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.111,
+                "NoiseScale": 0.01,
+                "NoiseTilingOffset": -0.837,
+                "HeightBias": 0.0,
+                "ParallaxScale": 0.0,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra002_terrainLayers_1",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/noise/act2/act2_palace_tile01_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.2,
+                "NoiseScale": 0.25,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": -1.0,
+                "ParallaxScale": 0.403,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra002_terrainLayers_2",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.06,
+                "NoiseScale": 0.2,
+                "NoiseTilingOffset": -0.337,
+                "HeightBias": 0.0,
+                "ParallaxScale": 0.0,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra002_terrainLayers_3",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/noise/act2/act2_palace_dirt01_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.2,
+                "NoiseScale": 0.487,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": 0.0,
+                "ParallaxScale": 0.2,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra002_terrainLayers_4",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.038,
+                "NoiseScale": 0.482,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": -1.0,
+                "ParallaxScale": 1.161,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra002_terrainLayers_5",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.2,
+                "NoiseScale": 0.2,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": -1.0,
+                "ParallaxScale": 1.0,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            }
+        ],
+        "terrainModelBlendSettings": {
+            "type": "TerrainModelBlendSettingsDesc",
+            "name": "act2_frontend_terrainDataUltra002_terrainModelBlendSettings",
+            "low": {
+                "type": "TerrainModelBlendSettingsPresetDesc",
+                "name": "act2_frontend_terrainDataUltra002_terrainModelBlendSettings_low",
+                "heightRange": {
+                    "x": 0.0,
+                    "y": 0.5
+                },
+                "noiseFrequency": 0.5,
+                "noiseScale": 0.2
+            },
+            "medium": {
+                "type": "TerrainModelBlendSettingsPresetDesc",
+                "name": "act2_frontend_terrainDataUltra002_terrainModelBlendSettings_medium",
+                "heightRange": {
+                    "x": 0.0,
+                    "y": 0.5
+                },
+                "noiseFrequency": 0.5,
+                "noiseScale": 0.2
+            },
+            "high": {
+                "type": "TerrainModelBlendSettingsPresetDesc",
+                "name": "act2_frontend_terrainDataUltra002_terrainModelBlendSettings_high",
+                "heightRange": {
+                    "x": 0.0,
+                    "y": 0.5
+                },
+                "noiseFrequency": 0.5,
+                "noiseScale": 0.2
+            }
+        },
+        "pathSmoothingWeight": 0.0,
+        "pathEdgeThresholdMin": 1.0,
+        "pathEdgeThresholdMax": 1.0,
+        "pathEdgeIndex": 0
+    },
+    "terrainDataLow": {
+        "type": "TerrainData",
+        "name": "act2_frontend_terrainDataUltra003",
+        "terrainLayers": [
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra003_terrainLayers_0",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.111,
+                "NoiseScale": 0.01,
+                "NoiseTilingOffset": -0.837,
+                "HeightBias": 0.0,
+                "ParallaxScale": 0.0,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra003_terrainLayers_1",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble_cracked01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/noise/act2/act2_palace_tile01_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.2,
+                "NoiseScale": 0.25,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": -1.0,
+                "ParallaxScale": 0.403,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra003_terrainLayers_2",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_marble02_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.06,
+                "NoiseScale": 0.2,
+                "NoiseTilingOffset": -0.337,
+                "HeightBias": 0.0,
+                "ParallaxScale": 0.0,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra003_terrainLayers_3",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/palace/act2_palace_dirt01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/noise/act2/act2_palace_dirt01_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.2,
+                "NoiseScale": 0.487,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": 0.0,
+                "ParallaxScale": 0.2,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra003_terrainLayers_4",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/town/act2_town_sand_base01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.038,
+                "NoiseScale": 0.482,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": -1.0,
+                "ParallaxScale": 1.161,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            },
+            {
+                "type": "TerrainLayer",
+                "name": "act2_frontend_terrainDataUltra003_terrainLayers_5",
+                "FootstepMaterial": "",
+                "FootstepMaterialVFX": "",
+                "Albedo": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_ALB.texture",
+                "Normal": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_NRM.texture",
+                "ORM": "data/hd/env/texture/terrain/act2/outdoors/act2_outdoors_sand_wet01_ORM.texture",
+                "Noise": "data/hd/env/texture/terrain/default_NOISE.texture",
+                "GrassTexture": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture",
+                "GrassAtlas": {
+                    "x": 1,
+                    "y": 1
+                },
+                "GrassAlphaThreshold": 0.5,
+                "IsNoiseInverted": false,
+                "HeightBlendThreshold": 0.2,
+                "NoiseScale": 0.2,
+                "NoiseTilingOffset": 0.0,
+                "HeightBias": -1.0,
+                "ParallaxScale": 1.0,
+                "NormalIntensity": 1.0,
+                "FogDensity": 1.0,
+                "ClutterDensity": 0.5,
+                "Clutter": [],
+                "GrassDensity": 0.0,
+                "GrassDensityVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassHeightScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassHeightVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWidthScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassShootsDensity": 0.1,
+                "GrassShootsScale": {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                "GrassColor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassColorOffsetMax": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "GrassColorVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassTerrainHeightBlendRange": {
+                    "x": -0.4,
+                    "y": 0.4
+                },
+                "GrassVertexJitter": 1.0,
+                "GrassRoughness": {
+                    "x": 0.8,
+                    "y": 0.9
+                },
+                "GrassOcclusion": {
+                    "x": 0.6,
+                    "y": 0.675
+                },
+                "GrassBend": {
+                    "x": 0.5,
+                    "y": 1.0
+                },
+                "GrassBendVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassBendHeightPower": 1.2,
+                "GrassBendHeightMin": 0.2,
+                "GrassStiffness": 0.5,
+                "GrassTwistVariation": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "GrassWrapLighting": 0.5,
+                "GrassThickness": 0.5,
+                "GrassSelfShadowHeightRange": {
+                    "x": 0.1,
+                    "y": 0.5
+                },
+                "GrassTilt": 1.0,
+                "GrassNormalJitter": 1.0,
+                "GrassProceduralNormalMapWidthRange": {
+                    "x": -0.3,
+                    "y": 0.5
+                },
+                "GrassWindDetail": 0.01,
+                "GrassWindNoise": 1.0,
+                "TileMaskOptions": 0
+            }
+        ],
+        "terrainModelBlendSettings": {
+            "type": "TerrainModelBlendSettingsDesc",
+            "name": "act2_frontend_terrainDataUltra003_terrainModelBlendSettings",
+            "low": {
+                "type": "TerrainModelBlendSettingsPresetDesc",
+                "name": "act2_frontend_terrainDataUltra003_terrainModelBlendSettings_low",
+                "heightRange": {
+                    "x": 0.0,
+                    "y": 0.5
+                },
+                "noiseFrequency": 0.5,
+                "noiseScale": 0.2
+            },
+            "medium": {
+                "type": "TerrainModelBlendSettingsPresetDesc",
+                "name": "act2_frontend_terrainDataUltra003_terrainModelBlendSettings_medium",
+                "heightRange": {
+                    "x": 0.0,
+                    "y": 0.5
+                },
+                "noiseFrequency": 0.5,
+                "noiseScale": 0.2
+            },
+            "high": {
+                "type": "TerrainModelBlendSettingsPresetDesc",
+                "name": "act2_frontend_terrainDataUltra003_terrainModelBlendSettings_high",
+                "heightRange": {
+                    "x": 0.0,
+                    "y": 0.5
+                },
+                "noiseFrequency": 0.5,
+                "noiseScale": 0.2
+            }
+        },
+        "pathSmoothingWeight": 0.0,
+        "pathEdgeThresholdMin": 1.0,
+        "pathEdgeThresholdMax": 1.0,
+        "pathEdgeIndex": 0
+    }
+}

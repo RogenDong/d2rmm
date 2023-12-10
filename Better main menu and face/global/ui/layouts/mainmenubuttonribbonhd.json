@@ -1,0 +1,228 @@
+{
+    "type": "Panel", "name": "MainMenuButtonRibbon",
+    "fields": {
+        "anchor": { "x": 0.0 },
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Ribbon",
+            "fields": { "rect": { "x": 0, "y": 0 }, "filename": "FrontEnd/HD/Final/FrontEnd_LeftPanel" },
+            "children": [
+                {
+                    "type": "ButtonWidget", "name": "CreateCharacter",
+                    "fields": {
+                        "rect": { "x": 165, "y": 540 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonMed",
+                        "textString": "@strLaunchCharSelectNewX",
+                        "onClickMessage": "FrontEndNavigation:ToCharacterCreate",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style": "$StyleFEButtonText",
+                        "hoveredFrame": 3,
+                        "disabledFrame": 2,
+                    },
+                },
+                {
+                    "type": "ButtonWidget", "name": "Settings",
+                    "fields": {
+                        "rect": { "x": 165, "y": 410 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonMed",
+                        "textString": "@OptionsHD",
+                        "onClickMessage": "PanelManager:OpenPanel:SettingsPanel",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style": "$StyleFEButtonText",
+                        "hoveredFrame": 3,
+                        "disabledFrame": 2,
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Cinematics",
+                    "fields": {
+                        "rect": { "x": 165, "y": 280 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonMed",
+                        "textString": "@strGameCinematics",
+                        "onClickMessage": "FrontEndNavigation:ToCinematics",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style": "$StyleFEButtonText",
+                        "hoveredFrame": 3,
+                        "disabledFrame": 2,
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Exit",
+                    "fields": {
+                        "rect": { "x": 165, "y": 150 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonMed",
+                        "textString": "@strexitentiregame",
+                        "onClickMessage": "FrontEndNavigation:ToExit",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style": "$StyleFEButtonText",
+                        "hoveredFrame": 3,
+                        "disabledFrame": 2,
+                    }
+                },                
+                {
+                    "type": "ButtonWidget", "name": "SecondaryContextButton",
+                    "fields": {
+                        "rect": { "x": 100, "y": 1325 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonLarge",
+                        "textString": "@LobbyButton",
+                        "onClickMessage": "FrontEndNavigation:ToLobby",
+                        "text/style": "$StyleFEButtonText",
+                        "pointSize": "$ExtraLargeFontSize",
+                        "textColor": "$LightButtonTextColor",
+                        "hoveredFrame": 3,
+                        "disabledFrame": 2,
+                        "disabledTint": {"a": 1.0 },
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Normal",
+                    "fields": {
+                        "rect": { "x": 100, "y": 745 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonLarge",
+                        "textString": "@strCreateGameNormalText",
+                        "onClickMessage": "CharacterSelect:LoadCharacter:0",
+                        "text/style": "$StyleFEButtonText",
+                        "pointSize": "$ExtraLargeFontSize",
+                        "textColor": "$LightButtonTextColor",
+                        "hoveredFrame": 3,
+                        "disabledFrame": 2,
+                        "disabledTint": { "a": 1.0 },
+                        "sound": "player_townportal_enter_hd",
+                    },
+                },    
+                {
+                    "type": "ButtonWidget", "name": "Nightmare",
+                    "fields": {
+                        "rect": { "x": 100, "y": 910 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonLarge",
+                        "textString": "@strCreateGameNightmareText",
+                        "onClickMessage": "CharacterSelect:LoadCharacter:1",
+                        "text/style": "$StyleFEButtonText",
+                        "pointSize": "$ExtraLargeFontSize",
+                        "textColor": "$LightButtonTextColor",
+                        "hoveredFrame": 3,
+                        "disabledFrame": 2,
+                        "disabledTint": { "a": 1.0 },
+                        "sound": "player_townportal_enter_hd",
+                    },
+                },    
+                {
+                    "type": "ButtonWidget", "name": "Hell",
+                    "fields": {
+                        "rect": { "x": 100, "y": 1075 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_ButtonLarge",
+                        "textString": "@strCreateGameHellText",
+                        "onClickMessage": "CharacterSelect:LoadCharacter:2",
+                        "text/style": "$StyleFEButtonText",
+                        "pointSize": "$ExtraLargeFontSize",
+                        "textColor": "$LightButtonTextColor",
+                        "hoveredFrame": 3,
+                        "disabledFrame": 2,
+                        "disabledTint": { "a": 1.0 },
+                        "sound": "player_townportal_enter_hd",
+                    },
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "OnlinePlaySettingsButton",
+                            "fields": {
+                                "anchor": { "x": 0.5, "y": 1.0 },
+                                "rect": { "x": -47, "y": 8 },
+                                "filename": "FrontEnd\\HD\\Final\\FrontEnd_Cog",
+                                "tooltipString": "@GameCreationHD",
+                                "onClickMessage": "PanelManager:OpenPanel:OnlineGameSettingsPanel",
+                                "hoveredFrame": 2,
+                                "disabledFrame": 3,
+                                "disabledTint": { "a": 1.0 },
+                            }
+                        },
+                    ] 
+                },    
+            ]
+        },
+        {
+            "type": "Widget", "name": "MotDSection",
+            "children": [
+                {
+                    "type": "NineTileImageWidget", "name": "MotDHeaderTile",
+                    "fields": {
+                        "filename": "PANEL/TooltipBorder/TooltipBorder",
+                        "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
+                        "tileScale": 1.0,
+                        "rect": { "x": 87, "y": 1542, "width": 631, "height": 0 },
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "MotDHeaderText",
+                            "fields": {
+                                "text": "@MessageOfTheDayTitle",
+                                "fitToParent": true,
+                                "style": {
+                                    "pointSize": "$MediumLargeFontSize",
+                                    "alignment": { "v": "center", "h": "center" },
+                                    "fontColor": "$FontColorGold",
+                                }
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "NineTileImageWidget", "name": "MotDBodyTile",
+                    "fields": {
+                        "filename": "PANEL/TooltipBorder/TooltipBorder",
+                        "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
+                        "tileScale": 1.0,
+                        "rect": { "x": 87, "y": 1588, "width": 631, "height": 490 },
+                    },
+                    "children": [
+                        {
+                            "type": "ImageWidget", "name": "ScrollBarBackground",
+                            "fields": {
+                                "rect": { "x": 605, "y": 8 },
+                                "filename": "FrontEnd\\HD\\Final\\FrontEnd_ScrollbarSmall",
+                            },
+                            "children": [
+                                {
+                                    "type": "ScrollControllerWidget", "name": "MotDScrollBar",
+                                    "fields": {
+                                        "rect": { "x": 5, "y": 31, "width": 24, "height": 420 },
+                                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                                        "barFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollIndicator",
+                                        "viewName": "MotDScrollView",
+                                        "buttonScrollAmount": 80,
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "ScrollViewWidget", "name": "MotDScrollView",
+                            "fields": {
+                                "rect": { "x": 4, "y": 4, "width": 600, "height": 486 },
+                                "scrollControllerName": "MotDScrollBar",
+                                "clipChildrenDraw": true,
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "MotDBodyText",
+                                    "fields": {
+                                        "rect": { "x": 4, "y": 4, "width": 594, "height": 500 },
+                                        "text": "",
+                                        "fitToText": true,
+                                        "style": {
+                                            "fontFace": "BlizzardGlobal",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": { "v": "top", "h": "center" },
+                                            "spacing": { "leading": 0.9 },
+                                            "options": { "pipeCharacterBehavior": "handle", "newlineHandling": "standard", "lineWrap": true },
+                                        },
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}
