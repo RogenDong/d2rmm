@@ -3,5 +3,8 @@ config.json
 # hd asset
 *.sprite
 *.texture
+*.timelines
+*.flac
+*.model
 
 colors.txt
