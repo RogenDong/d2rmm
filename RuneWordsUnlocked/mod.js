@@ -1,8 +1,9 @@
 const runesFilename = 'global\\excel\\runes.txt';
 const runes = D2RMM.readTsv(runesFilename);
+const weaponTypes = 'swor axe pole mace hamm h2h club scep miss staf mele wand spea knif';
 
 //unlock individual weapons
-runes.rows.forEach((row) => {
+for (const row of runes.rows) {
     // enable ladder rune words
     if(config.enableLadder){
          row.firstLadderSeason = '';
@@ -12,10 +13,9 @@ runes.rows.forEach((row) => {
 
     //unlock weapons
     if(config.weaponsUnlocked){
-        const weaponTypes = ['swor', 'axe', 'pole', 'mace', 'hamm', 'h2h', 'club', 'scep', 'miss', 'staf', 'mele', 'wand', 'spea', 'knif'];
         for(let i = 1; i <= 3; i++){
             const it = 'itype' + i;
-            if(weaponTypes.includes(row[it])){
+            if(weaponTypes.indexOf(row[it]) >= 0){
                 row[it] = 'weap';
             }
         }
@@ -123,7 +123,7 @@ runes.rows.forEach((row) => {
     }
 
     
-});
+}
 
 // Save changes
 D2RMM.writeTsv(runesFilename, runes);
