@@ -4,7 +4,7 @@ const runes = D2RMM.readJson(path_runes_json);
 runes.push({
   id: 27369,
   Key: "Runeword180",
-  zhTW: "TP盾"
+  zhTW: "快乐TP"
 });
 D2RMM.writeJson(path_runes_json, runes);
 
@@ -16,7 +16,6 @@ tsv_runes.rows.push({
   complete: 1,
   '*Patch Release': 110,
   itype1: 'armo',
-  itype2: 'shld',
   '*RunesUsed': 'TalRalOrtThul',
   Rune1: 'r07',
   Rune2: 'r08',
