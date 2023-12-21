@@ -27,10 +27,6 @@
         {
           "value": "tsc",
           "label": "回城卷轴"
-        },
-        {
-          "value": "isc",
-          "label": "鉴定卷轴"
         }
       ]
     }

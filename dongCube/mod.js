@@ -6,7 +6,7 @@ for (let ss = 1; ss <= 6; ss++) {
     version: 100,
     numinputs: ss + 2,
     // input 1 defined below
-    'input 2': 'gpw',
+    'input 2': 'isc',
     'input 3': `"${config.reSocketItem},qty=${ss}"`,
     output: 'useitem',
     '*eol': 0,
