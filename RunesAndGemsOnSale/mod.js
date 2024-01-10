@@ -17,20 +17,28 @@ for (let item of miscex.rows) {
     }
   }
   for (let gem of gems) {
-    if (config.chipped) {
-      findItemAndAddToMerchants(item, `Chipped ${gem}$`);
+    if (!item.name.includes(gem)) {
+      continue;
     }
-    if (config.flawed) {
-      findItemAndAddToMerchants(item, `Flawed ${gem}$`);
+    if (config.chipped && item.name.includes('Chipped')) {
+      addToMerchants(item);
+      break;
     }
-    if (config.regular) {
-      findItemAndAddToMerchants(item, `^${gem}$`);
+    if (config.flawed && item.name.includes('Flawed')) {
+      addToMerchants(item);
+      break;
     }
-    if (config.flawless) {
-      findItemAndAddToMerchants(item, `Flawless ${gem}$`);
+    if (config.regular && item.name == gem) {
+      addToMerchants(item);
+      break;
     }
-    if (config.perfect) {
-      findItemAndAddToMerchants(item, `Perfect ${gem}$`);
+    if (config.flawless && item.name.includes('Flawless')) {
+      addToMerchants(item);
+      break;
+    }
+    if (config.perfect && item.name.includes('Perfect')) {
+      addToMerchants(item);
+      break;
     }
   }
 }
@@ -40,11 +48,11 @@ function applyDiscountAddToMerchants(item) {
   }
   addToMerchants(item);
 }
-function findItemAndAddToMerchants(item, nameRegex) {
-  if (item.name.match(nameRegex) != null) {
-    addToMerchants(item);
-  }
-}
+// function findItemAndAddToMerchants(item, nameRegex) {
+//   if (item.name.match(nameRegex) != null) {
+//     addToMerchants(item);
+//   }
+// }
 function addToMerchants(item) {
   item.PermStoreItem = 1;
   for (const merchant of merchants) {
