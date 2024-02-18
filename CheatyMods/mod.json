@@ -1,0 +1,59 @@
+{
+  "name": "Cheaty Mods",
+  "description": "Adds various cheats.",
+  "author": "fadedRob",
+  "website": "https://github.com/fadedRob/d2rmm.mods",
+  "version": "1.4",
+  "config": [
+    {
+      "id": "easierToken",
+      "type": "checkbox",
+      "name": "Easier Token of Absolution",
+      "description": "Enable to add an easier Token of Absolution recipe using a Tome of Identify and Tome of Town Portal.",
+      "defaultValue": true
+    },
+    {
+      "id": "easierRunes",
+      "type": "checkbox",
+      "name": "Easier Runes",
+      "description": "Enable to remove gem requirements from Rune recipes.",
+      "defaultValue": true
+    },
+    {
+      "id": "easierCowPortal",
+      "type": "checkbox",
+      "name": "Easier Cow Level Portal",
+      "description": "Enable to make the Cow Level Portal recipe use a Scroll of Identify and Tome of Town Portal.",
+      "defaultValue": true
+    },
+    {
+      "id": "convertPandemoniumKeys",
+      "type": "checkbox",
+      "name": "Convert Pandemonium Keys",
+      "description": "Enable to add a recipe to convert Pandemonium Keys (Terror -> Hate -> Destruction -> Terror).",
+      "defaultValue": true
+    },
+    {
+      "id": "cubeStart",
+      "type": "checkbox",
+      "name": "Start With Horadric Cube",
+      "description": "Enable to have Horadric Cube in new character inventories.",
+      "defaultValue": true
+    },
+    {
+      "id": "levelingMultiplier",
+      "type": "number",
+      "name": "Experience Gain Percent",
+      "description": "Change experience gain to this percentage, i.e. 100 = vanilla, 200 = double exp.",
+      "defaultValue": "100"
+    },
+    {
+      "id": "manaRegen",
+      "type": "number",
+      "name": "Change Mana Regen",
+      "description": "120 = Vanilla. Lower numbers give quicker mana regen.",
+      "defaultValue": 120,
+      "minValue": 0
+    }
+  ]
+}
