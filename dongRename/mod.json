@@ -11,6 +11,13 @@
       "name": "特别注意的词缀",
       "description": "在游戏中红标这里输入的词缀。填正则表达式",
       "defaultValue": ""
+    },
+    {
+      "id": "showILv",
+      "type": "checkbox",
+      "name": "显示物等（仅离线可用）",
+      "description": "显示装备真实物等，",
+      "defaultValue": true
     }
   ]
 }

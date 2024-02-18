@@ -16,8 +16,8 @@ const W_TYPE = {
   ubercode: '',
   ultracode: '',
 };
-/** 物等表 */
-const LVL = {};
+// /** 物等表 */
+// const LVL = {};
 
 const DICT = {
   0: '轻',
@@ -149,13 +149,30 @@ const LEVEL_LV = {
   22667: "[43/66/85]"
 };
 
+function misc_ilv() {
+  if (!config.showILv) return;
+  const path_misc = 'global\\excel\\misc.txt';
+  const ls_misc = D2RMM.readTsv(path_misc);
+  const filter = 'amu rin cm1 cm2 cm3 jew';
+  for (const mm of ls_misc.rows) {
+    if (filter.includes(mm.code)) {
+      mm.ShowLevel = 1;
+    }
+  }
+  D2RMM.writeTsv(path_misc, ls_misc);
+}
+
 /** 找出防具【普、扩、精】【轻、中、重】 */
 function map_armor() {
   // 读取装备表
-  const ls_armor = D2RMM.readTsv('global\\excel\\armor.txt');
+  const path_armor = 'global\\excel\\armor.txt';
+  const ls_armor = D2RMM.readTsv(path_armor);
   for (const a of ls_armor.rows) {
+    if (config.showILv) {
+      a.ShowLevel = 1;
+    }
     // 记录装备物等，后面要用
-    LVL[a.code] = a.level;
+    // LVL[a.code] = a.level;
     let pass = true;
     // 每一种装备的 code 是唯一的；但一系装备的【普 扩 精】数据是相同的
     // 将 code 与 normcode，ubercode，ultracode 分别比较，找到这种装备属于哪个品质
@@ -182,12 +199,19 @@ function map_armor() {
       }
     }// end loop: speed
   }// end loop: all armors
+  if (config.showILv) {
+    D2RMM.writeTsv(path_armor, ls_armor);
+  }
 }
 /** 找出武器【普、扩、精】 */
 function map_weapon() {
-  const ls_weap = D2RMM.readTsv('global\\excel\\weapons.txt');
+  const path_weap = 'global\\excel\\weapons.txt';
+  const ls_weap = D2RMM.readTsv(path_weap);
   for (const w of ls_weap.rows) {
-    LVL[w.code] = w.level;
+    if (config.showILv) {
+      w.ShowLevel = 1;
+    }
+    // LVL[w.code] = w.level;
     for (const col in W_TYPE) {
       if (w.code === w[col]) {
         W_TYPE[col] += w.code + ' ';
@@ -195,6 +219,9 @@ function map_weapon() {
       }
     } // loop field in W_TYPE
   } // loop weapon data
+  if (config.showILv) {
+    D2RMM.writeTsv(path_weap, ls_weap);
+  }
 }
 
 /** 重命名符文 */
@@ -250,15 +277,16 @@ function rename_affixe() {
 /** 获取品质、轻重 */
 function get_comment(name) {
   // 物等
-  let lv = LVL[name.Key];
-  if (lv == null) {
-    return null;
-  }
+  //   let lv = LVL[name.Key];
+  //   if (lv == null) {
+  //     return null;
+  //   }
   // 看是不是武器
   for (const t in W_TYPE) {
     if (W_TYPE[t].includes(name.Key)) {
       // 确定是武器，后面的检查是防具的，跳过
-      return DICT[t] + lv;
+      //   return DICT[t] + lv;
+      return DICT[t];
     }
   }
 
@@ -280,8 +308,8 @@ function get_comment(name) {
       break;
     }
   }
-
-  return type + weight + lv;
+  //   return weight + type + lv;
+  return weight + type;
 }
 
 /** 重命名物品 */
